@@ -26,10 +26,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/touch-icon.png">
-    
+
 
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 
       <link rel="stylesheet" type="text/css" href="app.098c1041ffc822aa8c8f92a9f4b5d33f.css">
 
@@ -47,10 +48,14 @@
           font-family: 'Roboto', sans-serif;
         }
 
+        /* Set a special font just for item headers. */
+        .header h1,.header h2,.header-fullpage h1,.header-fullpage h2, header{
+          font-family: 'Libre Baskerville', serif;
+        }
     </style>
 
         <style>
-        .no-effects { 
+        .no-effects {
 background: #a3c1ad;
 }
 blockquote {
@@ -61,9 +66,7 @@ font-family: 'Libre Baskerville', serif;
 body {
 font-size: 13px;
 }
-h1, h2, h3 {
-font-family: 'Libre Baskerville', serif;
-}
+
         </style>
   </head>
 
@@ -71,9 +74,8 @@ font-family: 'Libre Baskerville', serif;
     <div id="loading_overlay" class="loading"  style="background-image:url('https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens_wm_trop2_202109_mfj22_dc1.jpg');background-position:center center;background-size:cover;" >
       <div class="opacity-pane"></div>
 
-      <img src="img/logo.svg" alt="Mural is Loading..." class="logo">
       <h3 class="story-name">The Boat Race Trophies</h3>
-      <img id="play_start" class="play-start animated bounce" src="img/tuska_play.svg" style="display: none; fill:white">
+      <img id="play_start" class="play-start" src="img/tuska_play.svg" style="display: none; fill:white">
     </div>
 
     <span class="mute">Mute</span>
@@ -88,34 +90,34 @@ font-family: 'Libre Baskerville', serif;
     <div class="nav">
       <nav>
         <ol>
-            <li data-id="0">Showing your Mettle</li>
-            <li data-id="1">Introduction</li>
-            <li data-id="5">Significance</li>
-            <li data-id="7">Making a Splash</li>
-            <li data-id="9">Conserving the trophies</li>
-            <li data-id="11">Researching the trophies</li>
-            <li data-id="13">The Boat Race today</li>
-            <li data-id="15">The origins of The Boat Race</li>
-            <li data-id="17">The birth of the Light Blues and Dark Blues</li>
-            <li data-id="19">The Championship Course and the Coin Toss</li>
-            <li data-id="21">Health and Safety concerns move The Boat Race to the Fens</li>
-            <li data-id="23">The First Women’s Boat Race</li>
-            <li data-id="25">An ongoing struggle for sporting equality </li>
-            <li data-id="27">Some Boat Race facts and stats</li>
-            <li data-id="29">Cockney slang</li>
-            <li data-id="31">Better boats but not necessarily better results</li>
-            <li data-id="33">The Silver Trophies</li>
-            <li data-id="35">The Second Men’s Boat Race Trophy</li>
-            <li data-id="37">The Third (current) Men’s Boat Race Trophy</li>
-            <li data-id="39">Invitation</li>
-            <li data-id="41">Making the trophy</li>
-            <li data-id="43">The Women’s Silver Trophies</li>
-            <li data-id="45">The Second Women’s Boat Race Trophy</li>
-            <li data-id="47">The Third (current) Women’s Boat Race trophy</li>
-            <li data-id="49">Commissioning, Designing and Making</li>
-            <li data-id="51">Materials</li>
-            <li data-id="53">Recording the winners</li>
-            <li data-id="60">GDBO</li>
+            <li data-id="1">Showing your Mettle</li>
+            <li data-id="2">Introduction</li>
+            <li data-id="6">Significance</li>
+            <li data-id="8">Making a Splash</li>
+            <li data-id="10">Conserving the trophies</li>
+            <li data-id="12">Researching the trophies</li>
+            <li data-id="14">The Boat Race today</li>
+            <li data-id="16">The origins of The Boat Race</li>
+            <li data-id="18">The birth of the Light Blues and Dark Blues</li>
+            <li data-id="20">The Championship Course and the Coin Toss</li>
+            <li data-id="22">Health and Safety concerns move The Boat Race to the Fens</li>
+            <li data-id="24">The First Women’s Boat Race</li>
+            <li data-id="26">An ongoing struggle for sporting equality </li>
+            <li data-id="28">Some Boat Race facts and stats</li>
+            <li data-id="30">Cockney slang</li>
+            <li data-id="32">Better boats but not necessarily better results</li>
+            <li data-id="34">The Silver Trophies</li>
+            <li data-id="36">The Second Men’s Boat Race Trophy</li>
+            <li data-id="38">The Third (current) Men’s Boat Race Trophy</li>
+            <li data-id="40">Invitation</li>
+            <li data-id="42">Making the trophy</li>
+            <li data-id="44">The Women’s Silver Trophies</li>
+            <li data-id="46">The Second Women’s Boat Race Trophy</li>
+            <li data-id="48">The Third (current) Women’s Boat Race trophy</li>
+            <li data-id="50">Commissioning, Designing and Making</li>
+            <li data-id="52">Materials</li>
+            <li data-id="54">Recording the winners</li>
+            <li data-id="61">GDBO</li>
         </ol>
       </nav>
     </div>
@@ -123,7 +125,34 @@ font-family: 'Libre Baskerville', serif;
     <article id="scrollytelling">
 
 
-          <section class="part parallax" name="story0" data-parallax=true
+
+
+
+          <section class="no-effects part text_align-center "
+                   name="story0"
+>
+            <div class="content container-fluid">
+              <div class="row">
+                <div class="col-sm-12 header">
+                    <h1><p><br></p></h1>
+                    <h2><p>A long form story from the Fitzwilliam Museum and Cambridge University Boat Club<br></p></h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
+                    <p>This story weaves a tale about the Boat Race trophies - on display in the Fitzwilliam Museum from Tuesday 2nd November 2021 to Sunday 27th March 2022</p>
+<p></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+          <section class="part parallax" name="story1" data-parallax=true
                 data-src="https://cubc.org.uk/app/uploads/2021/05/85B1118A-AD66-4727-9CE9-868AFC077EC2_1_201_a-2048x1069.jpeg"
                 data-src-medium="https://cubc.org.uk/app/uploads/2021/05/85B1118A-AD66-4727-9CE9-868AFC077EC2_1_201_a-2048x1069.jpeg"
                 data-src-phone="https://cubc.org.uk/app/uploads/2021/05/85B1118A-AD66-4727-9CE9-868AFC077EC2_1_201_a-2048x1069.jpeg"
@@ -131,14 +160,6 @@ font-family: 'Libre Baskerville', serif;
 
               <div class="bg-image" data-scroll-speed="-2"></div>
 
-              <div class="content container">
-                <div class="row">
-                  <div class="col-sm-12 header-fullpage">
-                    <h1>Showing your Mettle</h1>
-                      <h2>A long form story from the Fitzwilliam Museum and CUBC</h2>
-                  </div>
-                </div>
-              </div>
 
           </section>
 
@@ -154,7 +175,7 @@ font-family: 'Libre Baskerville', serif;
 
 
           <section class="no-effects part text_align-center "
-                   name="story1"
+                   name="story2"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -176,7 +197,7 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-          <section class="part parallax" name="story2" data-parallax=true
+          <section class="part parallax" name="story3" data-parallax=true
                 data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg"
                 data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg"
                 data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg"
@@ -203,7 +224,7 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-          <section class="part parallax" name="story3" data-parallax=true
+          <section class="part parallax" name="story4" data-parallax=true
                 data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg"
                 data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg"
                 data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg"
@@ -229,11 +250,11 @@ font-family: 'Libre Baskerville', serif;
 
 
           <section class="st-video part"
-            name="story4"
+            name="story5"
               data-youtube-id="cdBDyDLtdRM"
               >
             <div class="video-container">
-              <div id="ytplayer_cdBDyDLtdRM_4"></div>
+              <div id="ytplayer_cdBDyDLtdRM_5"></div>
             </div>
           </section>
 
@@ -243,7 +264,7 @@ font-family: 'Libre Baskerville', serif;
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story5"
+                   name="story6"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -266,14 +287,14 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-          <section class="part slideshow " name="story6" data-slides=true>
+          <section class="part slideshow " name="story7" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/men_celebrate.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/men_celebrate.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/men_celebrate.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 2: The Men’s Boat Race Trophy getting doused in champagne spray by the Cambridge crew after the Men’s Boat Race in 2019 
+                    <div class="v-slide-title">Fig. 2: The Men’s Boat Race Trophy getting doused in champagne spray by the Cambridge crew after the Men’s Boat Race in 2019
                     <span class="credits">© Adam Davy/PA via AP</span>
                   </div>
                 </div>
@@ -300,7 +321,7 @@ font-family: 'Libre Baskerville', serif;
 
 
           <section class="no-effects part text_align-center "
-                   name="story7"
+                   name="story8"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -322,7 +343,7 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-          <section class="part parallax" name="story8" data-parallax=true
+          <section class="part parallax" name="story9" data-parallax=true
                 data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Finish_of_2007_Oxford-Cambridge_boat_race.JPG/2560px-Finish_of_2007_Oxford-Cambridge_boat_race.JPG"
                 data-src-medium="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Finish_of_2007_Oxford-Cambridge_boat_race.JPG/2560px-Finish_of_2007_Oxford-Cambridge_boat_race.JPG"
                 data-src-phone="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Finish_of_2007_Oxford-Cambridge_boat_race.JPG/2560px-Finish_of_2007_Oxford-Cambridge_boat_race.JPG"
@@ -345,7 +366,7 @@ font-family: 'Libre Baskerville', serif;
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story9"
+                   name="story10"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -368,15 +389,15 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-          <section class="part slideshow " name="story10" data-slides=true>
+          <section class="part slideshow " name="story11" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lily_griffin_working_on_trophies.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lily_griffin_working_on_trophies.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lily_griffin_working_on_trophies.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title"><p> 
-Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Race Trophy in a conservation lab at the Fitzwilliam Museum </p> 
+                    <div class="v-slide-title"><p>
+Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Race Trophy in a conservation lab at the Fitzwilliam Museum </p>
                     <span class="credits"><p>© Victoria Avery<br></p></span>
                   </div>
                 </div>
@@ -387,8 +408,8 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lily_griffin_hand_close_up.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title"><p>Fig. 5: Lily at work on the Women’s Boat Race Trophy 
-</p> 
+                    <div class="v-slide-title"><p>Fig. 5: Lily at work on the Women’s Boat Race Trophy
+</p>
                     <span class="credits"><p>© Victoria Avery<br></p></span>
                   </div>
                 </div>
@@ -405,7 +426,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
           <section class="no-effects part text_align-center "
-                   name="story11"
+                   name="story12"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -426,7 +447,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
 
-          <section class="part parallax" name="story12" data-parallax=true
+          <section class="part parallax" name="story13" data-parallax=true
                 data-src="https://www.britishrowing.org/wp-content/uploads/2021/03/Boat-Race_1600x900.jpg"
                 data-src-medium="https://www.britishrowing.org/wp-content/uploads/2021/03/Boat-Race_1600x900.jpg"
                 data-src-phone="https://www.britishrowing.org/wp-content/uploads/2021/03/Boat-Race_1600x900.jpg"
@@ -449,7 +470,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story13"
+                   name="story14"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -470,7 +491,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
 
-          <section class="part parallax" name="story14" data-parallax=true
+          <section class="part parallax" name="story15" data-parallax=true
                 data-src="https://cubc.org.uk/app/uploads/2020/08/honours-boards.jpg"
                 data-src-medium="https://cubc.org.uk/app/uploads/2020/08/honours-boards.jpg"
                 data-src-phone="https://cubc.org.uk/app/uploads/2020/08/honours-boards.jpg"
@@ -493,7 +514,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
           <section class="no-effects part text_align-center "
-                   name="story15"
+                   name="story16"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -515,7 +536,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
 
-          <section class="part parallax" name="story16" data-parallax=true
+          <section class="part parallax" name="story17" data-parallax=true
                 data-src="https://cubc.org.uk/app/uploads/2021/02/Crew_List_1998.png"
                 data-src-medium="https://cubc.org.uk/app/uploads/2021/02/Crew_List_1998.png"
                 data-src-phone="https://cubc.org.uk/app/uploads/2021/02/Crew_List_1998.png"
@@ -538,7 +559,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story17"
+                   name="story18"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -561,7 +582,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
 
-          <section class="part slideshow " name="story18" data-slides=true>
+          <section class="part slideshow " name="story19" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/boat_race_crews_2018.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/boat_race_crews_2018.jpg'
@@ -583,7 +604,7 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
 
 
           <section class="no-effects part text_align-center "
-                   name="story19"
+                   name="story20"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -593,9 +614,9 @@ Fig. 4: Conservation Masters student Lily Griffin degreasing the Men’s Boat Ra
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>The Championship Course and the Coin Toss 
+                    <p>The Championship Course and the Coin Toss
 The Men’s Boat Race was only held intermittently from 1829 until 1856, when it became an annual fixture, and it’s been rowed every year since then, except in 1915–1919 (due to the First World War), 1940–1945 (due to the Second World War) and 2020, when it was cancelled due to the Covid pandemic. The teams row side-by-side on the Championship Course, a winding stretch of the River Thames’ Tideway measuring 4 miles and 374 yards long (6.8 km) between Putney and Mortlake, and which takes the rowers under the bridges at Hammersmith and Barnes. </p><p>
-The Coin Toss determines on which side (‘station’) of the Thames the crews will race, either ‘Middlesex’ (northern side) or ‘Surrey’ (southern side). The Men’s teams toss a gold sovereign dated 1829 (the date of the first Men’s Boat Race) while the Women’s teams use a 1927 gold sovereign (the date of the first Women’s Boat Race), acquired by Gold Medal Olympic rower Sir Matthew Pinsent for the ground-breaking 2015 race. Each station has its pros and cons, relating to how the river bends, and on wind direction and currents on Race Day. 
+The Coin Toss determines on which side (‘station’) of the Thames the crews will race, either ‘Middlesex’ (northern side) or ‘Surrey’ (southern side). The Men’s teams toss a gold sovereign dated 1829 (the date of the first Men’s Boat Race) while the Women’s teams use a 1927 gold sovereign (the date of the first Women’s Boat Race), acquired by Gold Medal Olympic rower Sir Matthew Pinsent for the ground-breaking 2015 race. Each station has its pros and cons, relating to how the river bends, and on wind direction and currents on Race Day.
 </p>
                 </div>
               </div>
@@ -609,14 +630,14 @@ The Coin Toss determines on which side (‘station’) of the Thames the crews w
 
 
 
-          <section class="part slideshow " name="story20" data-slides=true>
+          <section class="part slideshow " name="story21" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/2560px-university_boat_race_thames_map.svg.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/2560px-university_boat_race_thames_map.svg.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/2560px-university_boat_race_thames_map.svg.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 7: The Boat Race Map 
+                    <div class="v-slide-title">Fig. 7: The Boat Race Map
                     <span class="credits">Pointillist at English Wikipedia, CC BY-SA 3.0 <https: creativecommons.org="" licenses="" by-sa="" 3.0="">, via Wikimedia Commons</https:></span>
                   </div>
                 </div>
@@ -642,7 +663,7 @@ The Coin Toss determines on which side (‘station’) of the Thames the crews w
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story21"
+                   name="story22"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -652,8 +673,8 @@ The Coin Toss determines on which side (‘station’) of the Thames the crews w
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>  
-Only twice in Boat Race history has the course been moved from the Thames. In 1944, during the Second World War, it was felt too dangerous to have large crowds gathering along the banks of the Thames, and so the contest was moved to the more rural fens, and rowed on the Great Ouse in Ely. Oxford won but as this was an unofficial race it was not recorded on the Men’s trophy. 
+                    <p>
+Only twice in Boat Race history has the course been moved from the Thames. In 1944, during the Second World War, it was felt too dangerous to have large crowds gathering along the banks of the Thames, and so the contest was moved to the more rural fens, and rowed on the Great Ouse in Ely. Oxford won but as this was an unofficial race it was not recorded on the Men’s trophy.
 
 Fig. 9: The 1944 Men’s Boat Race being rowed on the River Great Ouse in Ely, which Oxford won
 In 2021, due to a combination of Hammersmith Bridge remaining closed for structural repairs and concerns about large crowds mingling during the Covid pandemic, The Boat Race returned to the River Great Ouse, but without any spectators permitted on the river banks.</p>
@@ -669,7 +690,7 @@ In 2021, due to a combination of Hammersmith Bridge remaining closed for structu
 
 
 
-          <section class="part slideshow  reverse_colors " name="story22" data-slides=true>
+          <section class="part slideshow  reverse_colors " name="story23" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/war-the-boat-race-was-held-on-the-ouse-at-ely-in-1944.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/war-the-boat-race-was-held-on-the-ouse-at-ely-in-1944.jpg'
@@ -685,7 +706,7 @@ In 2021, due to a combination of Hammersmith Bridge remaining closed for structu
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/skysports-boat-race-oxford_5330121.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 10: The 2021 Men’s Boat Race being battled out on the River Great Ouse, but with the only spectator being the BBC drone flying overhead to film the race 
+                    <div class="v-slide-title">Fig. 10: The 2021 Men’s Boat Race being battled out on the River Great Ouse, but with the only spectator being the BBC drone flying overhead to film the race
                     <span class="credits">© Skysports</span>
                   </div>
                 </div>
@@ -702,7 +723,7 @@ In 2021, due to a combination of Hammersmith Bridge remaining closed for structu
 
 
           <section class="no-effects part text_align-center "
-                   name="story23"
+                   name="story24"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -729,7 +750,7 @@ In 2021, due to a combination of Hammersmith Bridge remaining closed for structu
 
 
 
-          <section class="part slideshow-horizontal snap " name="story24" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story25" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -787,7 +808,7 @@ In 2021, due to a combination of Hammersmith Bridge remaining closed for structu
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story25"
+                   name="story26"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -818,7 +839,7 @@ In 1977, the Women’s Boat Race moved to Henley (where the Men’s lightweight 
 
 
 
-          <section class="part parallax" name="story26" data-parallax=true
+          <section class="part parallax" name="story27" data-parallax=true
                 data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cambridge_boathouses_-_Goldie.jpg/1280px-Cambridge_boathouses_-_Goldie.jpg"
                 data-src-medium="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cambridge_boathouses_-_Goldie.jpg/1280px-Cambridge_boathouses_-_Goldie.jpg"
                 data-src-phone="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cambridge_boathouses_-_Goldie.jpg/1280px-Cambridge_boathouses_-_Goldie.jpg"
@@ -841,7 +862,7 @@ In 1977, the Women’s Boat Race moved to Henley (where the Men’s lightweight 
 
 
           <section class="no-effects part text_align-center "
-                   name="story27"
+                   name="story28"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -851,8 +872,8 @@ In 1977, the Women’s Boat Race moved to Henley (where the Men’s lightweight 
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p> 
-Talking of umpires, in 1877, The Boat Race was declared a ‘dead heat’, the only time this has ever happened. According to legend, the Umpire ‘Honest John’ Phelps, was asleep under a bush as the race ended, leading him to announce the result as a <b>“dead heat to Oxford by four feet”</b>. 
+                    <p>
+Talking of umpires, in 1877, The Boat Race was declared a ‘dead heat’, the only time this has ever happened. According to legend, the Umpire ‘Honest John’ Phelps, was asleep under a bush as the race ended, leading him to announce the result as a <b>“dead heat to Oxford by four feet”</b>.
 </p>
 
 <p>
@@ -876,15 +897,15 @@ And this view is borne out by contemporary accounts, with The Times reporting ho
 
 
 
-          <section class="part slideshow " name="story28" data-slides=true>
+          <section class="part slideshow " name="story29" data-slides=true>
               <div class="bg-image"
                      data-src='https://i2-prod.cambridge-news.co.uk/incoming/article14434048.ece/ALTERNATES/s615b/1877-dead-heat.jpg'
                      data-src-medium='https://i2-prod.cambridge-news.co.uk/incoming/article14434048.ece/ALTERNATES/s615b/1877-dead-heat.jpg'
                      data-src-phone='https://i2-prod.cambridge-news.co.uk/incoming/article14434048.ece/ALTERNATES/s615b/1877-dead-heat.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 14: An artist’s impression of the 1877 Men’s Boat Race finish, which was declared to be ‘a dead heat’ 
- 
+                    <div class="v-slide-title">Fig. 14: An artist’s impression of the 1877 Men’s Boat Race finish, which was declared to be ‘a dead heat’
+
                     <span class="credits">Cambridge Evening News</span>
                   </div>
                 </div>
@@ -905,7 +926,7 @@ And this view is borne out by contemporary accounts, with The Times reporting ho
                    >
                 <div class="caption">
                     <div class="v-slide-title">Fig. 16: The Cambridge boat under water in the 1912 Men’s Boat Race (© Daily Mirror)
- 
+
                     <span class="credits">Daily Mirror</span>
                   </div>
                 </div>
@@ -917,7 +938,7 @@ And this view is borne out by contemporary accounts, with The Times reporting ho
                    >
                 <div class="caption">
                     <div class="v-slide-title">Fig. 17: The damaged Cambridge boat in the 1984 Men’s Boat Race
- 
+
                     <span class="credits">© Mirrorpix</span>
                   </div>
                 </div>
@@ -934,7 +955,7 @@ And this view is borne out by contemporary accounts, with The Times reporting ho
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story29"
+                   name="story30"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -946,7 +967,7 @@ And this view is borne out by contemporary accounts, with The Times reporting ho
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
                     <p>Excluding the ‘dead heat’ of 1877, the closest ever Men’s Boat Race was in 2003, when Oxford won by just a foot, and the fastest ever Men’s Boat Race was in 1998, when Cambridge won by 3 lengths in the record-breaking time of 16 minutes and 19 seconds. The Cambridge Women’s Crew also currently holds the record for the fastest Championship Course time, with a time of 18 minutes and 33 seconds set in 2017.
 </p><p>Cambridge has won the last four Women’s Boat Races and the last three Men’s Boat Races, and it’s also won more Boat Races overall: Cambridge women have won 45 (to Oxford’s 30) and Cambridge men have won 85 (to Oxford’s 80).
-The popularity of The Boat Race is underlined by the enormous crowds that turn up without fail every year to watch, despite often dreadful weather. </p><p>Indeed, so close is it to the hearts of East Enders that it has entered Cockney Rhyming Slang with ‘Boat Race’ (abbreviated to ‘Boat’) meaning ‘face’. So do take it as a compliment if a Cockney tells you “you’ve got a nice boat”! 
+The popularity of The Boat Race is underlined by the enormous crowds that turn up without fail every year to watch, despite often dreadful weather. </p><p>Indeed, so close is it to the hearts of East Enders that it has entered Cockney Rhyming Slang with ‘Boat Race’ (abbreviated to ‘Boat’) meaning ‘face’. So do take it as a compliment if a Cockney tells you “you’ve got a nice boat”!
 </p>
                 </div>
               </div>
@@ -958,7 +979,7 @@ The popularity of The Boat Race is underlined by the enormous crowds that turn u
 
 
 
-          <section class="part parallax" name="story30" data-parallax=true
+          <section class="part parallax" name="story31" data-parallax=true
                 data-src="https://i2-prod.mirror.co.uk/incoming/article10133057.ece/ALTERNATES/s1227b/h_00187032.jpg"
                 data-src-medium="https://i2-prod.mirror.co.uk/incoming/article10133057.ece/ALTERNATES/s1227b/h_00187032.jpg"
                 data-src-phone="https://i2-prod.mirror.co.uk/incoming/article10133057.ece/ALTERNATES/s1227b/h_00187032.jpg"
@@ -981,7 +1002,7 @@ The popularity of The Boat Race is underlined by the enormous crowds that turn u
 
 
           <section class="no-effects part text_align-center "
-                   name="story31"
+                   name="story32"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -991,7 +1012,7 @@ The popularity of The Boat Race is underlined by the enormous crowds that turn u
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p> The rowing boats (‘eights’) and oars (‘blades’) have been modified and improved over time but interestingly enough the University responsible for bringing in the innovations did not necessarily win: outriggers were used by both crews for the first time in 1846 (Cambridge won); sliding seats by both crews in 1873 (Cambridge won); ‘swivel’ rowlocks by Oxford in 1902 (Cambridge won); plastic boats by Oxford in 1977 (Oxford won); and ‘hatchet’ blades by Cambridge in 1993 (Cambridge won). 
+                    <p> The rowing boats (‘eights’) and oars (‘blades’) have been modified and improved over time but interestingly enough the University responsible for bringing in the innovations did not necessarily win: outriggers were used by both crews for the first time in 1846 (Cambridge won); sliding seats by both crews in 1873 (Cambridge won); ‘swivel’ rowlocks by Oxford in 1902 (Cambridge won); plastic boats by Oxford in 1977 (Oxford won); and ‘hatchet’ blades by Cambridge in 1993 (Cambridge won).
 There have been some famous Boat Race disasters. In 1912, due to appalling weather conditions, there was a famous ‘double ducking’ with both boats becoming water-logged and the crews having to abandon ship, resulting in a second race being held the following day, which Oxford won by 6 lengths. Even more catastrophically, in 1984, the Cambridge boat collided with a barge on the way to the start, wrecking its boat, so the race had to be postponed until the following day when, to add insult to injury, Oxford won by 3¾ lengths.</p>
                 </div>
               </div>
@@ -1005,14 +1026,14 @@ There have been some famous Boat Race disasters. In 1912, due to appalling weath
 
 
 
-          <section class="part slideshow " name="story32" data-slides=true>
+          <section class="part slideshow " name="story33" data-slides=true>
               <div class="bg-image"
                      data-src='https://media.gettyimages.com/photos/the-victorious-oxford-crew-celebrate-their-win-in-the-127th-annual-picture-id646275892?s=2048x2048'
                      data-src-medium='https://media.gettyimages.com/photos/the-victorious-oxford-crew-celebrate-their-win-in-the-127th-annual-picture-id646275892?s=2048x2048'
                      data-src-phone='https://media.gettyimages.com/photos/the-victorious-oxford-crew-celebrate-their-win-in-the-127th-annual-picture-id646275892?s=2048x2048'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 18: The Ladbroke Trophy is held aloft by Dark Blue Cox Susan Brown, the first woman to cox the Oxford Men’s Boat, after their 8-length victory in the 1981 Men’s Boat Race 
+                    <div class="v-slide-title">Fig. 18: The Ladbroke Trophy is held aloft by Dark Blue Cox Susan Brown, the first woman to cox the Oxford Men’s Boat, after their 8-length victory in the 1981 Men’s Boat Race
                     <span class="credits">© Hulton-Deutsch Collection/CORBIS/Corbis via Getty Images</span>
                   </div>
                 </div>
@@ -1023,7 +1044,7 @@ There have been some famous Boat Race disasters. In 1912, due to appalling weath
                      data-src-phone='https://media.gettyimages.com/photos/cambridge-cox-carole-burton-with-the-trophy-after-their-victory-over-picture-id118372280?s=2048x2048'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 19: The Ladbroke Trophy is held by Light Blue Cox Carole Burton, the first woman to cox the Cambridge Men’s Boat, after their 7-length victory in the 1986 Men’s Boat Race. This was the first Light Blue victory in eleven years, and one of the fastest winning times in Boat Race history. It was the last year that this trophy was awarded 
+                    <div class="v-slide-title">Fig. 19: The Ladbroke Trophy is held by Light Blue Cox Carole Burton, the first woman to cox the Cambridge Men’s Boat, after their 7-length victory in the 1986 Men’s Boat Race. This was the first Light Blue victory in eleven years, and one of the fastest winning times in Boat Race history. It was the last year that this trophy was awarded
                     <span class="credits">© Bob Thomas Sports Photography via Getty Images</span>
                   </div>
                 </div>
@@ -1040,7 +1061,7 @@ There have been some famous Boat Race disasters. In 1912, due to appalling weath
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story33"
+                   name="story34"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1074,7 +1095,7 @@ Nor have I been able to find out who designed and made the rather poignant silve
 
 
 
-          <section class="part slideshow-horizontal snap " name="story34" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story35" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1125,7 +1146,7 @@ Nor have I been able to find out who designed and made the rather poignant silve
 
 
           <section class="no-effects part text_align-center "
-                   name="story35"
+                   name="story36"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1149,15 +1170,15 @@ Nor have I been able to find out who designed and made the rather poignant silve
 
 
 
-          <section class="part slideshow " name="story36" data-slides=true>
+          <section class="part slideshow " name="story37" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_ribs_202109_mfj22_dc1.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 22: Detail of the Men’s Boat Race Trophy designed by Rachel Hopkins showing the rigger-inspired handles of the Quaich and the tops of the oar-shaped supports 
- 
+                    <div class="v-slide-title">Fig. 22: Detail of the Men’s Boat Race Trophy designed by Rachel Hopkins showing the rigger-inspired handles of the Quaich and the tops of the oar-shaped supports
+
                     <span class="credits">© Fitzwilliam Museum, Mike Jones</span>
                   </div>
                 </div>
@@ -1168,7 +1189,7 @@ Nor have I been able to find out who designed and made the rather poignant silve
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_lion_202109_mfj22_dc1-1-.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 23: Detail of the lion-shaped finial designed by Rachel Hopkins for the Men’s Boat Race Trophy, currently affixed to its lid as Cambridge won the last Boat Race. When Oxford next win, it will be replaced with an ox-shaped finial 
+                    <div class="v-slide-title">Fig. 23: Detail of the lion-shaped finial designed by Rachel Hopkins for the Men’s Boat Race Trophy, currently affixed to its lid as Cambridge won the last Boat Race. When Oxford next win, it will be replaced with an ox-shaped finial
                     <span class="credits">© Fitzwilliam Museum, Mike Jones</span>
                   </div>
                 </div>
@@ -1185,7 +1206,7 @@ Nor have I been able to find out who designed and made the rather poignant silve
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story37"
+                   name="story38"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1197,14 +1218,14 @@ Nor have I been able to find out who designed and made the rather poignant silve
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
                     <p>
-Between 1999 and 2001, the international investment management group Aberdeen Asset Management took over as Boat Race sponsors and for obvious reasons felt that a Beefeater-shaped trophy was no longer appropriate. They had already worked with London-based silversmith Nicholas Winton, renowned for creating bespoke silver cups for major sporting events, and so they approached him to see if he would be interested in creating a new trophy for the Men’s Boat Race. 
+Between 1999 and 2001, the international investment management group Aberdeen Asset Management took over as Boat Race sponsors and for obvious reasons felt that a Beefeater-shaped trophy was no longer appropriate. They had already worked with London-based silversmith Nicholas Winton, renowned for creating bespoke silver cups for major sporting events, and so they approached him to see if he would be interested in creating a new trophy for the Men’s Boat Race.
 
 When I contacted Nicholas and asked him about the design process he told me, </p>
 <blockquote><p>“There wasn’t really a design brief but given the sponsor’s Scottish roots, the trophy was to be called ‘The Quaich’, and we were keen to try to incorporate the form of this traditional Gaelic two-handled drinking vessel with shallow bowl into the design. The only other stipulation was that the trophy had to be an eye-catching feature on the victor’s podium, and its base elements had to be large enough to incorporate all the winners’ records from 1829 until 1999, and with room for future records too.”</p></blockquote>
 
 <p>
 
-Creating the design was very much a collaborative process between Aberdeen Asset Management, the Boat Race Committee (especially Duncan Clegg), Nicholas and his freelance designer, silversmith Rachel Hopkins (now Head Creative Designer at Theo Fennell Ltd). 
+Creating the design was very much a collaborative process between Aberdeen Asset Management, the Boat Race Committee (especially Duncan Clegg), Nicholas and his freelance designer, silversmith Rachel Hopkins (now Head Creative Designer at Theo Fennell Ltd).
 
 </p>
                 </div>
@@ -1219,14 +1240,14 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
 
-          <section class="part slideshow " name="story38" data-slides=true>
+          <section class="part slideshow " name="story39" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens_map_202109_mfj22_dc1-1-.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens_map_202109_mfj22_dc1-1-.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens_map_202109_mfj22_dc1-1-.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 24: Detail of the interior of the Quaich, showing the Championship Course engraved at the bottom 
+                    <div class="v-slide-title">Fig. 24: Detail of the interior of the Quaich, showing the Championship Course engraved at the bottom
                     <span class="credits"><p>© Fitzwilliam Museum, Mike Jones<br></p></span>
                   </div>
                 </div>
@@ -1237,7 +1258,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/design_for_boat_race.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 25: Rachel Hopkin’s final design for the Aberdeen Asset Management Quaich 
+                    <div class="v-slide-title">Fig. 25: Rachel Hopkin’s final design for the Aberdeen Asset Management Quaich
                     <span class="credits">© Nicholas Winton and Rachel Hopkins</span>
                   </div>
                 </div>
@@ -1254,7 +1275,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story39"
+                   name="story40"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1283,14 +1304,14 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
 
-          <section class="part slideshow " name="story40" data-slides=true>
+          <section class="part slideshow " name="story41" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_maker_202109_mfj22_dc1-1-.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_maker_202109_mfj22_dc1-1-.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/mens-boat_maker_202109_mfj22_dc1-1-.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 26: Detail of the Quaich showing inscription recording Rachel Hopkins as the designer 
+                    <div class="v-slide-title">Fig. 26: Detail of the Quaich showing inscription recording Rachel Hopkins as the designer
                     <span class="credits">© Fitzwilliam Museum, Mike Jones</span>
                   </div>
                 </div>
@@ -1302,7 +1323,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
                    >
                 <div class="caption">
                     <div class="v-slide-title">Fig. 27: Rachel Hopkins admiring the Aberdeen Asset Management Trophy at The Boat Race in 2000, when it was first awarded
- 
+
                     <span class="credits">© Rachel Hopkins</span>
                   </div>
                 </div>
@@ -1319,7 +1340,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story41"
+                   name="story42"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1353,7 +1374,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
 
-          <section class="part slideshow-horizontal snap " name="story42" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story43" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1399,7 +1420,7 @@ Creating the design was very much a collaborative process between Aberdeen Asset
 
 
           <section class="no-effects part text_align-center "
-                   name="story43"
+                   name="story44"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1425,7 +1446,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
 
 
 
-          <section class="part slideshow-horizontal snap " name="story44" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story45" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1478,7 +1499,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story45"
+                   name="story46"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1503,7 +1524,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
 
 
 
-          <section class="part slideshow " name="story46" data-slides=true>
+          <section class="part slideshow " name="story47" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/boatracesheild-jmarks.jpeg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/boatracesheild-jmarks.jpeg'
@@ -1519,7 +1540,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/2012bbreceivingshield.jpeg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig 32: The Marks Shield held aloft by the victorious Cambridge crew of the 2012 Women’s Boat Race, now sporting their Newton-sponsored Cambridge Blue wellies and kit.  
+                    <div class="v-slide-title">Fig 32: The Marks Shield held aloft by the victorious Cambridge crew of the 2012 Women’s Boat Race, now sporting their Newton-sponsored Cambridge Blue wellies and kit. 
                     <span class="credits">© Newton</span>
                   </div>
                 </div>
@@ -1536,7 +1557,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
 
 
           <section class="no-effects part text_align-center "
-                   name="story47"
+                   name="story48"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1548,7 +1569,7 @@ The First Women’s Boat Race Trophy: The Francombe Cup (awarded 1936–unknown 
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
                     <p>
-Newton Investment Management took over sponsorship of the Women’s Boat Race in 2011, and heavily invested in new equipment as well as branded kit, whilst keeping the old Marks Shield. In 2014, Newton commissioned a new silver trophy ‘to mark a new era of sporting equality’ ahead of the historic venue move from Henley to London in 2015. It was presented for the first time by Olympic Gold medallist Sophie Hosking at the 2014 Women’s Boat Race in Henley ‘as a symbolic link between the two Race locations.’ 
+Newton Investment Management took over sponsorship of the Women’s Boat Race in 2011, and heavily invested in new equipment as well as branded kit, whilst keeping the old Marks Shield. In 2014, Newton commissioned a new silver trophy ‘to mark a new era of sporting equality’ ahead of the historic venue move from Henley to London in 2015. It was presented for the first time by Olympic Gold medallist Sophie Hosking at the 2014 Women’s Boat Race in Henley ‘as a symbolic link between the two Race locations.’
 At the unveiling ceremony held a few weeks before the race, Helena Morrissey, CEO of Newton Investment Management commented: </p><p>“This magnificent trophy means that there is now a prize that truly reflects all of the commitment made by the scholar athletes to their sport and is another step towards parity between the Men’s and Women’s Boat Races. We are delighted to have been able to facilitate the development of such a key piece of art and to be able to contribute so fully to the longevity of the Race.”
 </p>
                 </div>
@@ -1562,7 +1583,7 @@ At the unveiling ceremony held a few weeks before the race, Helena Morrissey, CE
 
 
 
-          <section class="part slideshow-horizontal snap " name="story48" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story49" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1608,7 +1629,7 @@ At the unveiling ceremony held a few weeks before the race, Helena Morrissey, CE
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story49"
+                   name="story50"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1643,7 +1664,7 @@ The design process for the Women’s trophy was another highly successful collab
 
 
 
-          <section class="part slideshow " name="story50" data-slides=true>
+          <section class="part slideshow " name="story51" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lego_boat_race_trophy.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/lego_boat_race_trophy.jpg'
@@ -1651,7 +1672,7 @@ The design process for the Women’s trophy was another highly successful collab
                    >
                 <div class="caption">
                     <div class="v-slide-title">Fig. 34: The Lego model of Rod Kelly’s Women’s Boat Race Trophy
- 
+
                     <span class="credits"><p>© Rod Kelly<br></p></span>
                   </div>
                 </div>
@@ -1662,7 +1683,7 @@ The design process for the Women’s trophy was another highly successful collab
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/trophy_being_made.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig 35: The cup element of the Women’s Boat Race Trophy on Rod Kelly’s workbench being formed and hammered 
+                    <div class="v-slide-title">Fig 35: The cup element of the Women’s Boat Race Trophy on Rod Kelly’s workbench being formed and hammered
                     <span class="credits"><p>© Rod Kelly<br></p></span>
                   </div>
                 </div>
@@ -1679,7 +1700,7 @@ The design process for the Women’s trophy was another highly successful collab
 
 
           <section class="no-effects part text_align-center "
-                   name="story51"
+                   name="story52"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1689,9 +1710,9 @@ The design process for the Women’s trophy was another highly successful collab
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p> In terms of the materials, form and iconographic elements used in the trophy, Rod told me, </p><p>“I’ve always used sterling silver. It’s nice and hard and responsive, and lovely to chase. I deliberately chose a square shape for the trophy, rather than a more traditional round one, because from whichever angle you view it from, it always catches the light. Each square side panel was formed and hammered by hand with a slight curve in it. Rising from the bottom of each is a thin pointed shape recalling the bow of a rowing boat, surrounded by swirling lines, chased in to represent the flow of water as the hull cuts through. The four ebony columns represent the oars.” 
+                    <p> In terms of the materials, form and iconographic elements used in the trophy, Rod told me, </p><p>“I’ve always used sterling silver. It’s nice and hard and responsive, and lovely to chase. I deliberately chose a square shape for the trophy, rather than a more traditional round one, because from whichever angle you view it from, it always catches the light. Each square side panel was formed and hammered by hand with a slight curve in it. Rising from the bottom of each is a thin pointed shape recalling the bow of a rowing boat, surrounded by swirling lines, chased in to represent the flow of water as the hull cuts through. The four ebony columns represent the oars.”
 
-</p><p> 
+</p><p>
 Rod continued: </p><p>“The base is chased with symbols representing the parties involved. On one side is the Lion of what was then Cambridge University Women’s Boat Club surrounded by water and the side directly opposite has the Crown of Oxford University Women’s Boat Club also surrounded by waves. The other two sides are decorated with two apples and weighing scales which both represents the sponsors Newton as Investment Bankers and is a tongue in cheek reference to Isaac Newton. As with many pieces of silver I have made, the inside has a gilt finish, which makes it look very rich and elegant.” </p><p>The construction was evidently tricky and time-consuming with Rod confiding, </p><p>“The square body was made in four sections and soldered together. All of the component parts were made from flat sheet 1.1 mm thick, folded, hammered and soldered to produce the required shapes. As I have made many pieces before and had spent several hours working out exactly how it would be made it was really just a case of following a plan and executing each piece perfectly. If it does not work first time you have to take it apart and get it right! I had previously made a model in paper card and wood. The base is also made from 1.1 mm sheet, shaped and soldered together. Having worked for over 30 years you rely on your experience and skill. There is no substitute for experience.” </p>
                 </div>
               </div>
@@ -1705,14 +1726,14 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
 
-          <section class="part slideshow " name="story52" data-slides=true>
+          <section class="part slideshow " name="story53" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_ribs_202109_mfj22_dc1.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 36: The Newton Women’s Boat Race Trophy, made by Rod Kelly in 2014, showing off two sides of its base with the crown for OUWBC and the pair of apples and scales for the sponsors 
+                    <div class="v-slide-title">Fig. 36: The Newton Women’s Boat Race Trophy, made by Rod Kelly in 2014, showing off two sides of its base with the crown for OUWBC and the pair of apples and scales for the sponsors
                     <span class="credits"><p>© Fitzwilliam Museum, Mike Jones<br></p></span>
                   </div>
                 </div>
@@ -1723,7 +1744,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/wm-boat_marks_202109_mfj22_dc1-1-.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title">Fig. 37: Detail showing the gilt interior and the records of the Women’s Boat Races since 2014, when this trophy was first awarded  
+                    <div class="v-slide-title">Fig. 37: Detail showing the gilt interior and the records of the Women’s Boat Races since 2014, when this trophy was first awarded
                     <span class="credits"><p>© Fitzwilliam Museum, Mike Jones<br></p></span>
                   </div>
                 </div>
@@ -1740,7 +1761,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story53"
+                   name="story54"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1764,7 +1785,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
 
-          <section class="part slideshow-horizontal snap " name="story54" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story55" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1817,7 +1838,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
           <section class="no-effects part text_align-center "
-                   name="story55"
+                   name="story56"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1842,7 +1863,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
 
-          <section class="part slideshow " name="story56" data-slides=true>
+          <section class="part slideshow " name="story57" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/rod_with_crew.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/rod_with_crew.jpg'
@@ -1850,7 +1871,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
                    >
                 <div class="caption">
                     <div class="v-slide-title">Fig. 40: Rod Kelly together with the winning Oxford Women’s crew proudly holding up the Newton Trophy at the 2014 Boat Race when it was first awarded
- 
+
                     <span class="credits">© Rod Kelly</span>
                   </div>
                 </div>
@@ -1867,7 +1888,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story57"
+                   name="story58"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1889,7 +1910,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
 
-          <section class="part parallax" name="story58" data-parallax=true
+          <section class="part parallax" name="story59" data-parallax=true
                 data-src="https://cubc.org.uk/app/uploads/2019/03/PETERBMINNG_20190315_GBR1069-1-scaled.jpg"
                 data-src-medium="https://cubc.org.uk/app/uploads/2019/03/PETERBMINNG_20190315_GBR1069-1-scaled.jpg"
                 data-src-phone="https://cubc.org.uk/app/uploads/2019/03/PETERBMINNG_20190315_GBR1069-1-scaled.jpg"
@@ -1912,7 +1933,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
           <section class="no-effects part text_align-center "
-                   name="story59"
+                   name="story60"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1942,7 +1963,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
   </li>
   <li>
     For Cambridge University Boat Club (formed in 2020): <a href="https://cubc.org.uk/">https://cubc.org.uk/</a>
-    
+
   </li>
   <li>
     For Oxford University Boat Club (men only): <a href="https://oubc.org.uk/">https://oubc.org.uk/</a>
@@ -1976,7 +1997,7 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
 
 
           <section class="no-effects part text_align-center  reverse_colors "
-                   name="story60"
+                   name="story61"
                     data-dynamic-image="true"
                    >
             <div class="content container-fluid">
@@ -1991,45 +2012,11 @@ Rod continued: </p><p>“The base is chased with symbols representing the partie
                         <img data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/cubc.png" rel="resizable" alt="" />
                         <figcaption>
                             <span class="photographer">
-                              
+
                             </span>
                         </figcaption>
                       </figure>
-                    
-                </div>
-              </div>
-            </div>
-          </section>
 
-
-
-
-
-
-
-
-
-          <section class="no-effects part text_align-center  reverse_colors "
-                   name="story61"
-                    data-dynamic-image="true"
-                   >
-            <div class="content container-fluid">
-              <div class="row">
-                <div class="col-sm-12 header">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>A story from the Museum's Curatorial and Digital team.<br></p>
-                      <figure class="cms-image center">
-                        <img data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz_logo_150.jpg" rel="resizable" alt="" />
-                        <figcaption>
-                            <span class="photographer">
-                              
-                            </span>
-                        </figcaption>
-                      </figure>
-                    
                 </div>
               </div>
             </div>
