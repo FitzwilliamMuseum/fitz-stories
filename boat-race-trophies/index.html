@@ -125,16 +125,26 @@ text-decoration: none;
 .part.reverse_colors a {
 color: maroon;
 }
+.loading .play-start {
+    grid-area: play;
+    cursor: pointer;
+    height: 75px;
+}
+.svg-filter
+{
+  filter: brightness(0) invert(1);
+
+}
         </style>
   </head>
 
   <body class="longform frozen" name="top">
-    <div id="loading_overlay" class="loading"  style="background-image:url('https://content.fitz.ms/fitz-website/assets/mens_wm_trop2_202109_mfj22_dc1.jpg');background-position:center center;background-size:cover;" >
+    <div id="loading_overlay" class="loading"  style="background-image:url('https://fitz-cms-images.s3.eu-west-2.amazonaws.com/crews-champagne.jpg');background-position:center center;background-size:cover;" >
       <div class="opacity-pane"></div>
 
-      <img src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/cubc.png" alt="Mural is Loading..." class="logo">
-      <h3 class="story-name">The Boat Race Trophies</h3>
-      <img id="play_start" class="play-start animated " src="img/tuska_play.svg" style="display: none; fill:white">
+      <img src="img/fitz.svg" alt="Story is Loading..." class="logo">
+      <h2 class="story-name">The Boat Race Trophies</h2>
+      <img id="play_start" class="play-start animated svg-filter" src="img/play.svg">
     </div>
 
     <span class="mute">Mute</span>
@@ -996,7 +1006,7 @@ Only twice in Boat Race history has the course been moved from the Thames. In 19
                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/1955rbshortsframe4.jpg'
                   title='A set of Newnham brown shorts, tailored by Bodgers, and worn by Ruth Bonney, who rowed for CUWBC in 1953-6.'
                   type=''
-                  data-credits='<p>© Cambridge University Women's Boat Club</p>'>A set of Newnham brown shorts, tailored by Bodgers, and worn by Ruth Bonney, who rowed for CUWBC in 1953-6.</a>
+                  data-credits="© Cambridge University Women's Boat Club">A set of Newnham brown shorts, tailored by Bodgers, and worn by Ruth Bonney, who rowed for CUWBC in 1953-6.</a>
             </div>
           </section>
 
