@@ -10,5 +10,6 @@ subdomain.
 
 ## License
 
-The code produced is CC0, the referenced images will mostly be all rights reserved by the
-copyright holder and some are licensed for Fitzwilliam Museum use direct from the rights owner  at cost (eg Getty, Mirrorpix)
+The code produced is GPLv3, the referenced images will mostly be all rights reserved by the
+copyright holder and some are licensed for Fitzwilliam Museum use direct from the rights owner  at cost (eg Getty, Mirrorpix). If content is licensed under CC governance, this will be
+clearly stated. 
