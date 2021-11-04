@@ -14,9 +14,9 @@
   height: 0;
   bottom: 23px;
   right: 23px;
-  z-index: 100000000;
   padding: 0;
   overflow: hidden;
+  pointer-events: all;
   outline: none;
   border: none;
   border-radius: 2px;
