@@ -89,36 +89,7 @@
     font-style:italic;
   }
 
-  div > a {
-    position: relative;
-    color: #000;
-    text-decoration: none !important;
-  }
 
-  div > a:hover {
-    color: #000;
-  }
-
-  div > a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  div > a:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-  div > a:visited {
-    color: #000;
-  }
   a {
     color: maroon;
     text-decoration: none;
@@ -136,6 +107,22 @@
     cursor: pointer;
     height: 75px;
   }
+  .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  /* padding: 2px 16px; */
+}
   </style>
 </head>
 
@@ -233,6 +220,35 @@
 
         </div>
       </div>
+      <div class="row container" style="    margin: 0 auto;">
+        <div class="col-md-4 col-offset-md-4">
+        <div class="card" style="max-width:300px;">
+          <a href="#story0-2"><img data-src="https://content.fitz.ms/fitz-website/assets/mens-boat_lion_202109_mfj22_dc1%20(1).jpg?key=directus-medium-crop" alt="Avatar" width="300"></a>
+          <div class="container">
+            <a href="#story0-2"><h4>Discover the background</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="card" style="max-width:300px">
+          <a href="#story0-38"><img data-src="https://content.fitz.ms/fitz-website/assets/mens-boat_lion_202109_mfj22_dc1%20(1).jpg?key=directus-medium-crop" alt="Avatar" width="300"></a>
+          <div class="container">
+            <a href="#story0-38"><h4>Discover the trophies</h4></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card" style="max-width:300px">
+          <a href="https://fitzmuseum.cam.ac.uk/research/trophy-talk"><img data-src="https://content.fitz.ms/fitz-website/assets/SarahWinckless.jpg?key=directus-medium-crop" alt="Avatar" width="300"></a>
+          <div class="container">
+            <a href="https://fitzmuseum.cam.ac.uk/research/trophy-talk"><h4>Trophy talk</h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
