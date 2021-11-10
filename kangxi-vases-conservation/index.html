@@ -34,12 +34,14 @@
 
         gtag('config', 'G-2R0YLY9DRS');
       </script>
+      <link rel="stylesheet" href="dist/material-scrolltop.css" />
+
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/touch-icon.png">
-    
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 
       <link rel="stylesheet" type="text/css" href="app.098c1041ffc822aa8c8f92a9f4b5d33f.css">
@@ -55,7 +57,7 @@
         h6,
         .slideshow,
         .slideshow-horizontal {
-          font-family: 'Roboto', serif
+          font-family: 'Cabin', sans-serif
         }
 
         /* Set a special font just for item headers. */
@@ -65,19 +67,30 @@
     </style>
 
         <style>
-        .no-effects {
+        .svg-filter
+  {
+    filter: brightness(0) invert();
+
+  }
+  .loading .play-start {
+    grid-area: play;
+    cursor: pointer;
+    height: 75px;
+  }
+
+.no-effects {
 background: #084787;
 }
 .no-effects li {
      margin-bottom: 0rem;
-    line-height: 1.5em; 
+    line-height: 1.5em;
 }
 
 blockquote {
 color: maroon;
 border-left: none;
 font-family: 'Libre Baskerville', serif;
-font-weight:400; 
+font-weight:400;
 font-style:italic;
 }
 body {
@@ -85,7 +98,7 @@ font-size: 13px;
 }
 h2 {
 font-family: 'Libre Baskerville', serif;
-font-weight:900; 
+font-weight:900;
 font-style:italic;
 }
 
@@ -108,9 +121,9 @@ font-style:italic;
     <div id="loading_overlay" class="loading"  style="background-image:url('https://data.fitzmuseum.cam.ac.uk/imagestore/portfolio/F25982D9_7CB9_CFFF_028E_8BBFC531887C/623/981/large_C_17_1___A_1948_C_17_2___A_1948_C_17_3___A_1948_01_dc1.jpg');background-position:center center;background-size:cover;" >
       <div class="opacity-pane"></div>
 
-      <img src="img/logo.svg" alt="Mural is Loading..." class="logo">
-      <h3 class="story-name">Kangxi Chinese vases: Recovery from disaster</h3>
-      <img id="play_start" class="play-start animated bounce" src="img/tuska_play.svg" style="display: none; fill:white">
+        <img src="img/fitz.svg" alt="Story is Loading..." class="logo">
+        <h3 class="story-name">Kangxi Chinese vases: Recovery from disaster</h3>
+      <img id="play_start" class="play-start animated" src="img/play.svg" style="display: none; fill:white">
     </div>
 
     <span class="mute">Mute</span>
@@ -125,34 +138,33 @@ font-style:italic;
     <div class="nav">
       <nav>
         <ol>
+            <li data-id="1">Introduction</li>
             <li data-id="5">The garniture of five vases</li>
             <li data-id="7">How old are the vases? </li>
             <li data-id="9">What are they made of?</li>
             <li data-id="11">What did the damage show?</li>
             <li data-id="13">Had the vases ever been damaged before?</li>
             <li data-id="14">How long have the vases been in the Fitzwilliam Museum?</li>
-            <li data-id="15">Where did the incident take place?</li>
-            <li data-id="19">Press cuttings</li>
-            <li data-id="20">Recovery</li>
-            <li data-id="22">Sorting</li>
-            <li data-id="23"></li>
-            <li data-id="24">Appointment of Penny Bendall</li>
-            <li data-id="25"></li>
-            <li data-id="26">How did conservation start?</li>
-            <li data-id="28">Complications</li>
-            <li data-id="29">Cleaning</li>
-            <li data-id="31">Reassembly</li>
-            <li data-id="32">Taping the joins</li>
-            <li data-id="33">Problems</li>
-            <li data-id="34">Bonding</li>
-            <li data-id="35">Filling the Losses</li>
-            <li data-id="36">Retouching</li>
-            <li data-id="38">And breathe...</li>
-            <li data-id="40">Final questions and answers</li>
-            <li data-id="43">Your donation can help us</li>
-            <li data-id="44">Further reading</li>
-            <li data-id="45"></li>
-            <li data-id="46">Acknowledgements</li>
+            <li data-id="16">Where did the incident take place?</li>
+            <li data-id="20">Press cuttings</li>
+            <li data-id="21">Recovery</li>
+            <li data-id="23">Sorting</li>
+            <li data-id="25">Appointment of Penny Bendall</li>
+            <li data-id="27">How did conservation start?</li>
+            <li data-id="29">Complications</li>
+            <li data-id="31">Cleaning</li>
+            <li data-id="34">Reassembly</li>
+            <li data-id="36">Taping the joins</li>
+            <li data-id="38">Problems</li>
+            <li data-id="40">Bonding</li>
+            <li data-id="42">Filling the Losses</li>
+            <li data-id="43">Retouching</li>
+            <li data-id="45">And breathe...</li>
+            <li data-id="51"></li>
+            <li data-id="52">Final questions and answers</li>
+            <li data-id="54">Your donation can help us</li>
+            <li data-id="56">Further reading</li>
+            <li data-id="58">Acknowledgements</li>
         </ol>
       </nav>
     </div>
@@ -204,7 +216,7 @@ The impact that toppled the vases resulted in pieces of porcelain being distribu
 
 Public and press shared the opinion that the reconstruction of the vases was impossible.
 </p><p>
-Was it impossible? This long form story tells the tale of recovery, conservation and redisplay.&nbsp;</p>
+Was it impossible? This long form story tells the tale of recovery, conservation and redisplay. </p>
 
 <div class="alert alert-danger"><p><b>Disclaimer. </b>The following conservation and restoration methods were chosen to suit the needs of these vases. They are not necessarily suitable for other objects, especially non-porcelain ceramics. The Museum cannot be held responsible for damage arising from attempts to replicate these techniques. If in doubt, seek professional advice.
 </p></div>
@@ -593,11 +605,30 @@ Hard-paste porcelain is a type of white ceramic body made from a special mixture
 
 
 
+          <section class="part parallax" name="story15" data-parallax=true
+                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz_portico.jpeg"
+                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz_portico.jpeg"
+                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz_portico.jpeg"
+            >
+
+              <div class="bg-image" data-scroll-speed="-2"></div>
+
+
+          </section>
+
+
+
+
+
+
+
+
+
 
 
 
           <section class="no-effects part text_align-center "
-                   name="story15"
+                   name="story16"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -618,7 +649,7 @@ The main flight of stairs rises from the ground floor to a central landing benea
 
 
 
-          <section class="part sticky-image" name="story16"
+          <section class="part sticky-image" name="story17"
               data-audio=true
                 data-mp3="uploads/vases/all-the-tea-in-china.mp3"
                 data-loop="true"
@@ -654,7 +685,7 @@ The main flight of stairs rises from the ground floor to a central landing benea
 
 
           <section class="no-effects part text_align-center "
-                   name="story17"
+                   name="story18"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -676,7 +707,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part sticky-image" name="story18"
+          <section class="part sticky-image" name="story19"
               data-image=true
                 data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/screenshot-2021-11-09-at-19.34.41.jpg"
                 data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/screenshot-2021-11-09-at-19.34.41.jpg"
@@ -704,7 +735,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part slideshow-horizontal snap " name="story19" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story20" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -765,7 +796,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story20"
+                   name="story21"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -789,7 +820,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part slideshow-horizontal snap " name="story21" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story22" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -840,7 +871,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story22"
+                   name="story23"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -863,7 +894,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part slideshow-horizontal snap " name="story23" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story24" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -921,7 +952,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story24"
+                   name="story25"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -943,14 +974,14 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part slideshow " name="story25" data-slides=true>
+          <section class="part slideshow " name="story26" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2650.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2650.jpg'
                      data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2650.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title"><p>Penny Bendall and the Museum Director, Duncan Robinson with the vases at a press call</p> 
+                    <div class="v-slide-title"><p>Penny Bendall and the Museum Director, Duncan Robinson with the vases at a press call</p>
                     <span class="credits"><p>The Fitzwilliam Museum</p></span>
                   </div>
                 </div>
@@ -967,7 +998,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story26"
+                   name="story27"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -976,7 +1007,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>The conservator was presented with a room full of trays of sherds.</p><p>She sorted out which of the larger pieces belonged to each vase by doing a draft reconstruction of all three at the same time. The shapes, curvatures and diameters of the three vases are all slightly different. So too are the underglaze and overglaze designs and the colour schemes, for example the rim and foot patterns differ on the two yan yan vases. The conservator uses these clues to match pieces and and put them together. The thicknesses also vary greatly - from 3cm near the base of the largest jar to less than 1cm near the rims. Pieces of the lid, flat bases and glazed rims were very easy to identify. The recovery system used meant that many of these were found adjacent to each other in the relevant grid squares/trays. The neck and base of the baluster vase that had sat on the left of the sill were largely intact.</p><p>The quality of the painting also varies. The painted enamels on the largest baluster jar is much coarser than that on the other pots (see Disaster!!) and the painted leaves only have one tone of green. In contrast, the yan yan vases and the baluster vase lid have both dark and pale greens. Penny occasionally referred to old photographs to examine details of the designs. Her years of experience meant she quickly mastered all three 3D jigsaws. At this stage, she also identified found the positions of many, though not all, of the smaller surface fragments.<br></p><p>From the reconstruction. Penny discovered that much of the surface design was intact and, except for the impact points, there were very few areas so damaged that they were beyond recovery. Some of the pieces had completely disintegrated, leaving holes. When she had finished, she was able to determine how many holes would need filling. Fortunately the reconstruction also showed that the porcelain had not 'sprung' significantly (see Springing below).<br></p><p>Amazingly, she was able to sort the fragments and reassemble all three vases in a single working day! The following day, the sherds were numbered in order of assembly, then the pots were dismantled for cleaning. The fragments were packed up and taken to the Bendall Ceramics Conservation studio.<br></p>
+                    <p>The conservator was presented with a room full of trays of sherds. She sorted out which of the larger pieces belonged to each vase by doing a draft reconstruction of all three at the same time. The shapes, curvatures and diameters of the three vases are all slightly different. So too are the underglaze and overglaze designs and the colour schemes, for example the rim and foot patterns differ on the two yan yan vases. The conservator uses these clues to match pieces and and put them together. The thicknesses also vary greatly - from 3cm near the base of the largest jar to less than 1cm near the rims. Pieces of the lid, flat bases and glazed rims were very easy to identify. The recovery system used meant that many of these were found adjacent to each other in the relevant grid squares/trays. The neck and base of the baluster vase that had sat on the left of the sill were largely intact.</p><p>The quality of the painting also varies. The painted enamels on the largest baluster jar is much coarser than that on the other pots&nbsp; and the painted leaves only have one tone of green. In contrast, the yan yan vases and the baluster vase lid have both dark and pale greens. Penny occasionally referred to old photographs to examine details of the designs. Her years of experience meant she quickly mastered all three 3D jigsaws. At this stage, she also identified found the positions of many, though not all, of the smaller surface fragments.<br></p><p>From the reconstruction. Penny discovered that much of the surface design was intact and, except for the impact points, there were very few areas so damaged that they were beyond recovery. Some of the pieces had completely disintegrated, leaving holes. When she had finished, she was able to determine how many holes would need filling. Fortunately the reconstruction also showed that the porcelain had not 'sprung' significantly (see Springing below).<br></p><p>Amazingly, she was able to sort the fragments and reassemble all three vases in a single working day! The following day, the sherds were numbered in order of assembly, then the pots were dismantled for cleaning. The fragments were packed up and taken to the Bendall Ceramics Conservation studio.<br></p>
                 </div>
               </div>
             </div>
@@ -989,7 +1020,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
-          <section class="part slideshow " name="story27" data-slides=true>
+          <section class="part slideshow " name="story28" data-slides=true>
               <div class="bg-image"
                      data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc01009.jpg'
                      data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc01009.jpg'
@@ -1010,7 +1041,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story28"
+                   name="story29"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1051,9 +1082,29 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
+          <section class="part slideshow " name="story30" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/screenshot-2021-11-10-at-14.23.36.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/screenshot-2021-11-10-at-14.23.36.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/screenshot-2021-11-10-at-14.23.36.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Points of impact and tape</p> </div>
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
 
           <section class="no-effects part text_align-center "
-                   name="story29"
+                   name="story31"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1076,9 +1127,29 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
+          <section class="part slideshow " name="story32" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc01011.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc01011.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc01011.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Fragments of the vases after cleaning</p> </div>
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
 
           <section class="no-effects part text_align-center "
-                   name="story30"
+                   name="story33"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1102,7 +1173,7 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story31"
+                   name="story34"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1124,97 +1195,54 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
+          <section class="part slideshow-horizontal snap " name="story35" data-slideshow=true>
+            <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+              <div class="slides"></div>
+              <a
+                class="prev"
+                aria-controls="blueimp-gallery"
+                aria-label="previous slide"
+                aria-keyshortcuts="ArrowUp"
+              ></a>
+              <a
+                class="next"
+                aria-controls="blueimp-gallery"
+                aria-label="next slide"
+                aria-keyshortcuts="ArrowDown"
+              ></a>
+              <ol class="indicator"></ol>
+            </div>
+            <div class="slide-info" aria-live="polite">
+              <p class="slide-caption"></p>
+              <span class="credits"></span>
+            </div>
 
-
-          <section class="no-effects part text_align-center "
-                   name="story32"
->
-            <div class="content container-fluid">
-              <div class="row">
-                <div class="col-sm-12 header">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p><span style="font-weight: 700;">&nbsp;</span>Penny used the same self-adhesive tape she used to make the draft assembly and applied it in the same way. (see Sorting). Once again she was careful to avoid any fragile or flaking surface decoration and apply the tape perpendicular to the join. Because the breaks were fresh and clean, they produced a very close fit when reassembled, rendering the joins invisible in some places. (The exception was the sprung neck section of one yan yan vase (see Sorting for information on springing) and areas of loss along some break edges. Finally, the tiniest flakes of glaze and painted enamel designs were inserted.</p>
-                </div>
-              </div>
+            <div class='slide-container'>
+                <a href='#'
+                    data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2626.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2626.jpg'
+                    data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2626.jpg'
+                  title=''
+                  type=''
+                  data-credits=''></a>
+                <a href='#'
+                    data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2616.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2616.jpg'
+                    data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2616.jpg'
+                  title=''
+                  type=''
+                  data-credits=''></a>
+                <a href='#'
+                    data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2608.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2608.jpg'
+                    data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/dsc_2608.jpg'
+                  title=''
+                  type=''
+                  data-credits=''></a>
             </div>
           </section>
 
 
-
-
-
-
-
-
-
-          <section class="no-effects part text_align-center "
-                   name="story33"
->
-            <div class="content container-fluid">
-              <div class="row">
-                <div class="col-sm-12 header">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>&nbsp;If the joins are not perfect there is a risk with very large heavy ceramics that the fragments will settle and move out of alignment. When this happens the whole object has to be taken apart, the tape residues removed and the pieces reassembled all over again. Therefore, after assembly the conservator leaves them taped up for a few days before applying the adhesive. Unfortunately, this happened with the heavy baluster jar. After two days, the pieces settled and slumped and the whole vase had to be dismantled, re-cleaned and reassembled. There was no problem with the second reassembly.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-
-
-
-
-
-
-
-          <section class="no-effects part text_align-center "
-                   name="story34"
->
-            <div class="content container-fluid">
-              <div class="row">
-                <div class="col-sm-12 header">
-                    <h1><p>Bonding</p></h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>The joins were made with a colourless 2-part epoxy resin (HXTAL™ NYL-1), a very fluid conservation-grade adhesive that crawls into very narrow cracks by capillary action. It does not shrink when it hardens. Epoxy resins are very strong, hard adhesives. Conservation-grade epoxies are suitable for repairing hard non-porous ceramics such as hard-paste porcelains. They are not appropriate for weaker or porous ceramics such as earthenware. HXTAL™ NYL-1 was chosen because it has better ageing characteristics than some of the other available conservation-grade epoxy resin adhesives. The cured translucent resin also has a similar refractive index to the glazes on hard-paste porcelain. It is this quality that makes cracks seem to disappear when it is applied.<br></p><p>The HXTAL™ NYL-1 is a 2-part liquid adhesive measured by weight in a 3:1 ratio. If not mixed accurately the adhesive will not set and the bonds may fail. The components were weighed out exactly, drop-wise on scales, before mixing thoroughly. A small metal sculptor's spatula was used to mix the adhesive and apply it to the taped cracks.<br></p><p>HXTAL™ NYL-1 has one principle drawback. The adhesive takes two weeks to harden. There is a risk that dirt will settle onto the wet surface, causing staining. To prevent this, the vase is covered loosely in acid-free tissue paper while it dries.<br></p><p><b>What are the desirable features in a conservation-grade adhesive?<br></b></p><ul><li>Bond strength appropriate to the ceramic to be repaired</li><li>Compatibility (e.g. appropriate viscosity) with the ceramic to be repaired</li><li>Good long term stability and reversibility, non-yellowing</li><li>Good surface wetting (i.e. the adhesive coats ('wets') all parts of the surface to which it is appliedColourless ('water-white'), transparent</li><li>Close match to the refractive index of any glazes</li><li>Good working time</li></ul><p>All adhesives will eventually discolour as they age, but conservators use those that remain stable for longer. In conservation timescales, good stability and reversibility means ideally using materials that will not discolour and remain reversible for a minimum of 100 years under museum conditions. This is not possible for most epoxy resins currently on the market. Most adhesives age and discolour faster if regularly exposed to strong light and heat, such as direct sunlight. Oddly, there is also evidence that some epoxy resins need some light to prevent them from discolouring, so repaired objects should not be stored in total dark, such as a cupboard.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-
-
-
-
-
-
-
-          <section class="no-effects part text_align-center "
-                   name="story35"
->
-            <div class="content container-fluid">
-              <div class="row">
-                <div class="col-sm-12 header">
-                    <h1><p>Filling the Losses</p></h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>The adhesive was the same 2-part epoxy resin, HXTAL™ NYL-1, used to bond the fragments (see Bonding). Fumed silica was used as the bulking agent mixed into it. Fumed silica is opaque, white, very finely ground and chemically inert.</p><p>4 powder pigments were mixed to match the glaze: titanium white, cerulean blue, raw umber and yellow ochre. Each was first mixed separately on a white tile with a small amount of the filler, then combined. The choice of pigments and the exact amounts used to achieve a colour match with the glaze are determined by experience. The colour of the glaze may vary, even on a single object. Each area must be matched using different batches of filler.</p><p>The conservator used two different types of fill on the vases. The smaller losses and cracks were all filled with HXTAL™ NYL-1 and fumed silica. However, a very few large losses that went through the thickness of the walls, such as the points of impact, required a slightly different approach.</p><p>HXTAL™ NYL-1/fumed silica filler is, by itself, too translucent and brittle to make a robust thick fill and could fail if stressed. So these fills were given a little extra strength by making an inner layer of a slightly flexible material. These were prepared in two stages. First UHU™ Plus, another epoxy resin with slightly greater flexibility and opacity, was kneaded with French chalk and titanium powder pigment to make a second filler.</p><p>A thin layer was inserted into the centre of the hole to make the core of the fill. It also acted as a backing layer for the rest of the fill. UHU™ Plus yellows faster than HXTAL, but this is not a problem as it is covered on both sides and would not be seen. Once hardened, the core fill was covered on both sides with the more translucent HXTAL™ NYL-1 filler, prepared as usual.</p><p>The following abrasives were all used on each fill, starting with the coarsest and proceeding to the finest, finishing with micro-crystalline wax. It took weeks to rubdown all the fills to produce a smooth glossy finish.</p><p><b>Abrasives (coarsest to finest)&nbsp;</b></p><ul><li>Metal file</li><li>Scalpel</li><li>Flour paper (grades 0 and 00)</li><li>Micromesh™ cloths (grades 3600 (coarse), 6000 (medium) and 12000 (fine))</li><li>Solvol™ Autosol chrome cleaner, a fine abrasive paste</li><li>Prelim™ Surface Cleaner, a fine abrasive paste</li><li>Renaissance™ micro-crystalline wax</li></ul>
-                </div>
-              </div>
-            </div>
-          </section>
 
 
 
@@ -1230,12 +1258,11 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
             <div class="content container-fluid">
               <div class="row">
                 <div class="col-sm-12 header">
-                    <h1><p>Retouching</p></h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>Penny Bendall used Nylon watercolour brushes (sizes 1 and 2) and the crushed pigments were mixed with Windsor and Newton™ Acrylic Glaze. The paints were a little too matt, so they were given a final coat of the same glaze to blend in with the glossy enamels.</p><p>None of the fills on the body were retouched with paint, only the missing areas of painted enamels. Although the filler for the body colour was tinted to match the colour of the glaze, variations in colour of both the glaze and the filler mean that not every fill is a perfect colour match. A few of these areas can be identified when seen close up. Some restorers completely cover their fills by spraying on the retouching paints. Usually the spray extends on either side of the fill to blend in with the original surface. This makes the repair 'invisible' but also covers up some of the original object. This method tends to disguise the restoration and may deceive the viewer. It is increasingly regarded as a less ethical approach for museum quality objects.<br></p><p>The artists who decorated the vase made a mistake when painting the red enamel flowers. Either the red enamel was applied too wet or it melted during firing, causing dribbling.<br></p>
+                    <p>Penny used the same self-adhesive tape she used to make the draft assembly and applied it in the same way. (see Sorting). Once again she was careful to avoid any fragile or flaking surface decoration and apply the tape perpendicular to the join. Because the breaks were fresh and clean, they produced a very close fit when reassembled, rendering the joins invisible in some places. (The exception was the sprung neck section of one yan yan vase (see Sorting for information on springing) and areas of loss along some break edges. Finally, the tiniest flakes of glaze and painted enamel designs were inserted.</p>
                 </div>
               </div>
             </div>
@@ -1250,34 +1277,11 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
           <section class="part slideshow " name="story37" data-slides=true>
               <div class="bg-image"
-                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
-                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
-                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3247.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3247.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3247.jpg'
                    >
                 <div class="caption">
-                    <div class="v-slide-title"><p>Penny Bendall's setup for pigments, fillers, adhesives and brushes</p> 
-                    <span class="credits"><p>The Fitzwilliam Museum</p></span>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-image"
-                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
-                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
-                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
-                   >
-                <div class="caption">
-                    <div class="v-slide-title"><p>Penny Bendall retouching one of the conserved vases</p> </div>
-                </div>
-              </div>
-              <div class="bg-image"
-                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
-                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
-                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
-                   >
-                <div class="caption">
-                    <div class="v-slide-title"><p>Cracks shown to the right of Penny's hand</p> 
-                    <span class="credits"><p>The Fitzwilliam Museum</p></span>
-                  </div>
                 </div>
               </div>
           </section>
@@ -1297,12 +1301,11 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
             <div class="content container-fluid">
               <div class="row">
                 <div class="col-sm-12 header">
-                    <h1><p>And breathe...</p></h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>On 9th November 2007, all three vases went back on display in a specially designed case in the Flower Paintings gallery (Gallery 17), the upper room adjacent to the staircase where they were broken. The case allows the visitor to examine the vases closely from all sides.<br></p><p>The windowsill was no longer appropriate for displaying the restored vases. The location receives some direct sunlight which can accelerate the ageing and yellowing of the adhesive and fills. There is also a huge amount of visitor interest in the vases and stairs are an inappropriate place for large groups to congregate.<br></p><p>The remaining pair of baluster jars from the garniture can be seen to either side of the case, in the niches above the stairs. In early 2007, they were removed for safety during maintenance work on the windows. They were recently cleaned and returned to the niches.</p>
+                    <p>If the joins are not perfect there is a risk with very large heavy ceramics that the fragments will settle and move out of alignment. When this happens the whole object has to be taken apart, the tape residues removed and the pieces reassembled all over again. </p><p>Therefore, after assembly the conservator leaves them taped up for a few days before applying the adhesive. Unfortunately, this happened with the heavy baluster jar. After two days, the pieces settled and slumped and the whole vase had to be dismantled, re-cleaned and reassembled. There was no problem with the second reassembly.</p>
                 </div>
               </div>
             </div>
@@ -1314,9 +1317,9 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="part parallax" name="story39" data-parallax=true
-                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
-                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
-                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
+                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/c.17-1948-1-left-top.jpg"
+                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/c.17-1948-1-left-top.jpg"
+                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/c.17-1948-1-left-top.jpg"
             >
 
               <div class="bg-image" data-scroll-speed="-2"></div>
@@ -1341,11 +1344,59 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
             <div class="content container-fluid">
               <div class="row">
                 <div class="col-sm-12 header">
+                    <h1><p>Bonding</p></h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
-                    <p>The restoration had taken 7 months from start to finish. There were long intervals in between some stages, such as waiting 2 weeks for the adhesive and fills to cure (See Bonding and Filling). The baluster vase was the first to be completed. It took 4 months, from April to July 2006 and was first unveiled at the Fitzwilliam's Mission Impossible? exhibition in 2006. The retouching of the first vase took 6 days. The two yan yan vases were worked on in tandem and took 3 months.</p><p>Theoretically it would have been possible to reinstate every single fragment - except for those pieces which were ground into dust when trodden on, or exploded into so many tiny slivers they could not be reconstructed, such as the points of impact (see Sorting). The restoration would however have taken twice as long and cost twice as much, and some areas would still have required filling, including the old restorations. It was possible to replace all of the larger pieces and hundreds of the smaller ones, especially those from the inner and outer glazed surfaces. A very small proportion of the total surface area was not reinserted. Many of those fragments not replaced came from areas of the porcelain wall that had completely delaminated, i.e. separated into a series of brittle, wafer-thin slices.</p>
+                    <p>The joins were made with a colourless 2-part epoxy resin (HXTAL™ NYL-1), a very fluid conservation-grade adhesive that crawls into very narrow cracks by capillary action. It does not shrink when it hardens. Epoxy resins are very strong, hard adhesives. Conservation-grade epoxies are suitable for repairing hard non-porous ceramics such as hard-paste porcelains. They are not appropriate for weaker or porous ceramics such as earthenware. HXTAL™ NYL-1 was chosen because it has better ageing characteristics than some of the other available conservation-grade epoxy resin adhesives. The cured translucent resin also has a similar refractive index to the glazes on hard-paste porcelain. It is this quality that makes cracks seem to disappear when it is applied.<br></p><p>The HXTAL™ NYL-1 is a 2-part liquid adhesive measured by weight in a 3:1 ratio. If not mixed accurately the adhesive will not set and the bonds may fail. The components were weighed out exactly, drop-wise on scales, before mixing thoroughly. A small metal sculptor's spatula was used to mix the adhesive and apply it to the taped cracks.<br></p><p>HXTAL™ NYL-1 has one principle drawback. The adhesive takes two weeks to harden. There is a risk that dirt will settle onto the wet surface, causing staining. To prevent this, the vase is covered loosely in acid-free tissue paper while it dries.<br></p><p><b>What are the desirable features in a conservation-grade adhesive?<br></b></p><ul><li>Bond strength appropriate to the ceramic to be repaired</li><li>Compatibility (e.g. appropriate viscosity) with the ceramic to be repaired</li><li>Good long term stability and reversibility, non-yellowing</li><li>Good surface wetting (i.e. the adhesive coats ('wets') all parts of the surface to which it is appliedColourless ('water-white'), transparent</li><li>Close match to the refractive index of any glazes</li><li>Good working time</li></ul><p>All adhesives will eventually discolour as they age, but conservators use those that remain stable for longer. In conservation timescales, good stability and reversibility means ideally using materials that will not discolour and remain reversible for a minimum of 100 years under museum conditions. This is not possible for most epoxy resins currently on the market. Most adhesives age and discolour faster if regularly exposed to strong light and heat, such as direct sunlight. Oddly, there is also evidence that some epoxy resins need some light to prevent them from discolouring, so repaired objects should not be stored in total dark, such as a cupboard.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+          <section class="part slideshow " name="story41" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3236.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3236.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3236.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Bonding the fragments back together</p>
+                    <span class="credits"><p>Fitzwilliam Museum</p></span>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+          <section class="no-effects part text_align-center "
+                   name="story42"
+>
+            <div class="content container-fluid">
+              <div class="row">
+                <div class="col-sm-12 header">
+                    <h1><p>Filling the Losses</p></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
+                    <p>The adhesive was the same 2-part epoxy resin, HXTAL™ NYL-1, used to bond the fragments (see Bonding). Fumed silica was used as the bulking agent mixed into it. Fumed silica is opaque, white, very finely ground and chemically inert.</p><p>4 powder pigments were mixed to match the glaze: titanium white, cerulean blue, raw umber and yellow ochre. Each was first mixed separately on a white tile with a small amount of the filler, then combined. The choice of pigments and the exact amounts used to achieve a colour match with the glaze are determined by experience. The colour of the glaze may vary, even on a single object. Each area must be matched using different batches of filler.</p><p>The conservator used two different types of fill on the vases. The smaller losses and cracks were all filled with HXTAL™ NYL-1 and fumed silica. However, a very few large losses that went through the thickness of the walls, such as the points of impact, required a slightly different approach.</p><p>HXTAL™ NYL-1/fumed silica filler is, by itself, too translucent and brittle to make a robust thick fill and could fail if stressed. So these fills were given a little extra strength by making an inner layer of a slightly flexible material. These were prepared in two stages. First UHU™ Plus, another epoxy resin with slightly greater flexibility and opacity, was kneaded with French chalk and titanium powder pigment to make a second filler.</p><p>A thin layer was inserted into the centre of the hole to make the core of the fill. It also acted as a backing layer for the rest of the fill. UHU™ Plus yellows faster than HXTAL, but this is not a problem as it is covered on both sides and would not be seen. Once hardened, the core fill was covered on both sides with the more translucent HXTAL™ NYL-1 filler, prepared as usual.</p><p>The following abrasives were all used on each fill, starting with the coarsest and proceeding to the finest, finishing with micro-crystalline wax. It took weeks to rubdown all the fills to produce a smooth glossy finish.</p><p><b>Abrasives (coarsest to finest)&nbsp;</b></p><ul><li>Metal file</li><li>Scalpel</li><li>Flour paper (grades 0 and 00)</li><li>Micromesh™ cloths (grades 3600 (coarse), 6000 (medium) and 12000 (fine))</li><li>Solvol™ Autosol chrome cleaner, a fine abrasive paste</li><li>Prelim™ Surface Cleaner, a fine abrasive paste</li><li>Renaissance™ micro-crystalline wax</li></ul>
                 </div>
               </div>
             </div>
@@ -1360,7 +1411,137 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
           <section class="no-effects part text_align-center "
-                   name="story41"
+                   name="story43"
+>
+            <div class="content container-fluid">
+              <div class="row">
+                <div class="col-sm-12 header">
+                    <h1><p>Retouching</p></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
+                    <p>Penny Bendall used Nylon watercolour brushes (sizes 1 and 2) and the crushed pigments were mixed with Windsor and Newton™ Acrylic Glaze. The paints were a little too matt, so they were given a final coat of the same glaze to blend in with the glossy enamels.</p><p>None of the fills on the body were retouched with paint, only the missing areas of painted enamels. Although the filler for the body colour was tinted to match the colour of the glaze, variations in colour of both the glaze and the filler mean that not every fill is a perfect colour match. A few of these areas can be identified when seen close up. Some restorers completely cover their fills by spraying on the retouching paints. Usually the spray extends on either side of the fill to blend in with the original surface. This makes the repair 'invisible' but also covers up some of the original object. This method tends to disguise the restoration and may deceive the viewer. It is increasingly regarded as a less ethical approach for museum quality objects.<br></p><p>The artists who decorated the vase made a mistake when painting the red enamel flowers. Either the red enamel was applied too wet or it melted during firing, causing dribbling.<br></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+          <section class="part slideshow " name="story44" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0018-copy.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Penny Bendall's setup for pigments, fillers, adhesives and brushes</p>
+                    <span class="credits"><p>The Fitzwilliam Museum</p></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/image-08.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Penny Bendall retouching one of the conserved vases</p> </div>
+                </div>
+              </div>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h3209.jpg'
+                   >
+                <div class="caption">
+                    <div class="v-slide-title"><p>Cracks shown to the right of Penny's hand</p>
+                    <span class="credits"><p>The Fitzwilliam Museum</p></span>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+          <section class="no-effects part text_align-center "
+                   name="story45"
+>
+            <div class="content container-fluid">
+              <div class="row">
+                <div class="col-sm-12 header">
+                    <h1><p>And breathe...</p></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
+                    <p>On 9th November 2007, all three vases went back on display in a specially designed case in the Flower Paintings gallery (Gallery 17), the upper room adjacent to the staircase where they were broken. The case allows the visitor to examine the vases closely from all sides.<br></p><p>The windowsill was no longer appropriate for displaying the restored vases. The location receives some direct sunlight which can accelerate the ageing and yellowing of the adhesive and fills. There is also a huge amount of visitor interest in the vases and stairs are an inappropriate place for large groups to congregate.<br></p><p>The remaining pair of baluster jars from the garniture can be seen to either side of the case, in the niches above the stairs. In early 2007, they were removed for safety during maintenance work on the windows. They were recently cleaned and returned to the niches.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+          <section class="part parallax" name="story46" data-parallax=true
+                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
+                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
+                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0119-copy.jpg"
+            >
+
+              <div class="bg-image" data-scroll-speed="-2"></div>
+
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+          <section class="part slideshow " name="story47" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h5134.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h5134.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/zq8h5134.jpg'
+                   >
+                <div class="caption">
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+          <section class="no-effects part text_align-center "
+                   name="story48"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1382,9 +1563,28 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
+          <section class="part slideshow " name="story49" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/chips.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/chips.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/chips.jpg'
+                   >
+                <div class="caption">
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
 
           <section class="no-effects part text_align-center "
-                   name="story42"
+                   name="story50"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1404,11 +1604,73 @@ Later, the German sculptor Thomas Demand was inspired to replicate the exact sce
 
 
 
+          <section class="part parallax" name="story51" data-parallax=true
+                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz2.jpeg"
+                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz2.jpeg"
+                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitz2.jpeg"
+            >
+
+              <div class="bg-image" data-scroll-speed="-2"></div>
+
+
+          </section>
+
+
+
+
+
+
+
+
+
 
 
 
           <section class="no-effects part text_align-center "
-                   name="story43"
+                   name="story52"
+>
+            <div class="content container-fluid">
+              <div class="row">
+                <div class="col-sm-12 header">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text">
+                    <p>The restoration had taken 7 months from start to finish. There were long intervals in between some stages, such as waiting 2 weeks for the adhesive and fills to cure (See Bonding and Filling). The baluster vase was the first to be completed. It took 4 months, from April to July 2006 and was first unveiled at the Fitzwilliam's Mission Impossible? exhibition in 2006. The retouching of the first vase took 6 days. The two yan yan vases were worked on in tandem and took 3 months.</p><p>Theoretically it would have been possible to reinstate every single fragment - except for those pieces which were ground into dust when trodden on, or exploded into so many tiny slivers they could not be reconstructed, such as the points of impact (see Sorting). The restoration would however have taken twice as long and cost twice as much, and some areas would still have required filling, including the old restorations. It was possible to replace all of the larger pieces and hundreds of the smaller ones, especially those from the inner and outer glazed surfaces. A very small proportion of the total surface area was not reinserted. Many of those fragments not replaced came from areas of the porcelain wall that had completely delaminated, i.e. separated into a series of brittle, wafer-thin slices.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+          <section class="part parallax" name="story53" data-parallax=true
+                data-src="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitzwilliam-museum-main-entrance-2018_3.jpg"
+                data-src-medium="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitzwilliam-museum-main-entrance-2018_3.jpg"
+                data-src-phone="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/fitzwilliam-museum-main-entrance-2018_3.jpg"
+            >
+
+              <div class="bg-image" data-scroll-speed="-2"></div>
+
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+          <section class="no-effects part text_align-center "
+                   name="story54"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1438,9 +1700,28 @@ To offer exhibitions and public programmes that engage the widest possible audie
 
 
 
+          <section class="part slideshow " name="story55" data-slides=true>
+              <div class="bg-image"
+                     data-src='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0136-copy.jpg'
+                     data-src-medium='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0136-copy.jpg'
+                     data-src-phone='https://fitz-cms-images.s3.eu-west-2.amazonaws.com/_dsf0136-copy.jpg'
+                   >
+                <div class="caption">
+                </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
 
           <section class="no-effects part text_align-center "
-                   name="story44"
+                   name="story56"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1461,7 +1742,7 @@ To offer exhibitions and public programmes that engage the widest possible audie
 
 
 
-          <section class="part slideshow-horizontal snap " name="story45" data-slideshow=true>
+          <section class="part slideshow-horizontal snap " name="story57" data-slideshow=true>
             <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
               <div class="slides"></div>
               <a
@@ -1505,7 +1786,7 @@ To offer exhibitions and public programmes that engage the widest possible audie
 
 
           <section class="no-effects part text_align-center "
-                   name="story46"
+                   name="story58"
 >
             <div class="content container-fluid">
               <div class="row">
@@ -1531,5 +1812,19 @@ To offer exhibitions and public programmes that engage the widest possible audie
       <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> -->
       <script>Hls = {}; // remove me if you use the script above.</script>
       <script type="text/javascript" src="app.f111789a13461dcf209d.js"></script>
+      <button class="material-scrolltop" type="button"></button>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>  <!-- material-scrolltop plugin -->
+      <script src="dist/material-scrolltop.js"></script>
+      <!-- Initialize material-scrolltop (minimal) -->
+      <script>
+        $('body').materialScrollTop();
+      </script>
+      <script defer type="text/javascript" src="https://fitzmuseum.cam.ac.uk/js/config.js"></script>
+
+      <script defer type="text/javascript" src="https://fitzmuseum.cam.ac.uk/js/klaro.js"></script>
+
   </body>
 </html>
